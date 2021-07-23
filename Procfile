@@ -1,1 +1,1 @@
-web: sh setup.sh && flask run api.py
+web: gunicorn api:app
