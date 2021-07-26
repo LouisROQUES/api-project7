@@ -4,11 +4,13 @@ from io import BytesIO
 import joblib
 import requests
 from flask import jsonify
+from flask_restful import Resource, Api
 import pandas as pd
 import json
 
 from flask import Flask
 app = Flask(__name__)
+api = Api(app)
 
 @app.route('/test')
 def test():
